@@ -3,18 +3,22 @@ import { CommonModule } from '@angular/common';
 
 import { BrancheRoutingModule } from './branche-routing.module';
 import { BrancheComponent } from './branche.component';
+import { AddBrancheComponent } from './add-branche/add-branche.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
-    BrancheComponent
+    BrancheComponent,
+    AddBrancheComponent
   ],
   imports: [
     CommonModule,
-    BrancheRoutingModule
+    BrancheRoutingModule,
+    CommonModule,FormsModule
   ]
   ,exports:[
-    BrancheComponent
+    BrancheComponent,AddBrancheComponent
   ]
 })
 export class BrancheModule { }
