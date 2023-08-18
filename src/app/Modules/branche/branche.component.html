@@ -1,0 +1,19 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Branche Name</th>
+        <th scope="col">Phone Number</th>
+        <th scope="col">Supervisor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of Branches">
+        <th scope="row">2</th>
+        <td>{{item.brancheName}}</td>
+        <td>{{item.branchePhoneNumber}}</td>
+        <td>{{item.brancheSupervisorName}}</td>
+      </tr>
+      
+    </tbody>
+  </table>
